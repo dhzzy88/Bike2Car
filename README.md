@@ -16,26 +16,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-NOTE:数据集百度云盘链接：
-[here](https://pan.baidu.com/s/1T_M1QsgLPP7PS1eXq9i1cA) 
-提取码：c9fx
-
 > 该项目使用了spooNN中的hls-nn-lib的hls加速库，参考了mnist-cnn的深度学习网络结构。
 >
 > 下面步骤在ubuntu18.04中完成。
 
-## 1. Train
+##  Train
 
 - 训练CNN网络模型参数，需要构建一套tensorflow的框架（建议使用GPU版本）。
 
@@ -53,9 +38,9 @@ NOTE:数据集百度云盘链接：
 >
 > ` $ python3 ./cnn.py 2 --meta ./train_log/mnist-cnn/*.meta --model ./train_log/mnist-cnn/*data-00000-of-00001 --output weights.npy`
 
-
+## 生成RTL工程
 
 > `$ vivado_hls -f ~/Bike2Car/scripts/create_hls.tcl -tclargs "hls_project" "~/Bike2Car/hls/" "~/Bike2Car/hls-nn-lib/"`
 
-
+在生成的RTL工程可以导出IP、安装IP后生成bitstream，通过PYNQ部署到PYNQ-Z2中。
 
