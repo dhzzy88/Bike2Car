@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Aug  2 12:37:01 2020
+# Process ID: 28920
+# Current directory: /home/hairealy/project/cnn/spooNN/mnist-cnn/scripts
+# Command line: vivado -mode batch -notrace -source ./make-vivado-proj.tcl -tclargs pynq_vivado ./../output//pynq_vivado ./ ./../repo
+# Log file: /home/hairealy/project/cnn/spooNN/mnist-cnn/scripts/vivado.log
+# Journal file: /home/hairealy/project/cnn/spooNN/mnist-cnn/scripts/vivado.jou
+#-----------------------------------------------------------
+source ./make-vivado-proj.tcl -notrace
